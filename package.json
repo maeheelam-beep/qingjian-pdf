@@ -1,0 +1,44 @@
+{
+  "name": "qingjian-pdf",
+  "version": "1.1.0",
+  "private": true,
+  "description": "青笺 PDF · 干净、克制的本地 PDF 办公工具",
+  "main": "./out/main/index.js",
+  "author": "Qingjian",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test:smoke": "node scripts/smoke.mjs",
+    "dist": "electron-vite build && electron-builder --win portable --x64"
+  },
+  "dependencies": {
+    "@cantoo/fontkit": "2.0.12",
+    "@cantoo/pdf-lib": "2.11.1",
+    "diff": "8.0.2",
+    "docx": "9.5.1",
+    "exceljs": "4.4.0",
+    "jszip": "3.10.1",
+    "lucide-react": "0.525.0",
+    "mammoth": "1.10.0",
+    "pdfjs-dist": "4.10.38",
+    "pptxgenjs": "3.12.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "tesseract.js": "6.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.0",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "@vitejs/plugin-react": "4.7.0",
+    "electron": "38.8.6",
+    "electron-builder": "26.0.12",
+    "electron-vite": "3.1.0",
+    "playwright-core": "1.55.0",
+    "typescript": "5.9.3",
+    "vite": "6.3.5"
+  }
+}
